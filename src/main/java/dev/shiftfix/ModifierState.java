@@ -11,8 +11,14 @@ public final class ModifierState {
 
     public static void onKey(int key, int action) {
         boolean down = action != 0;
-        if (key == 340 || key == 344) shift = down;
-        if (key == 341 || key == 345) control = down;
+        if (key == 340 || key == 344) {
+            shift = down;
+            System.out.println("[ShiftFix] shift key=" + key + " action=" + action);
+        }
+        if (key == 341 || key == 345) {
+            control = down;
+            System.out.println("[ShiftFix] ctrl key=" + key + " action=" + action);
+        }
     }
 
     public static int extraModifiers() {
