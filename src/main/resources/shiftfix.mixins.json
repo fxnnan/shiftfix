@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.shiftfix.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "KeyboardHandlerMixin",
+    "MouseHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
