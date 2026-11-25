@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "shiftfix",
+  "version": "${version}",
+  "name": "ShiftFix",
+  "description": "Passes held Shift/Ctrl state to mouse clicks so GUI shortcuts work when the launcher's SDL input drops modifiers.",
+  "environment": "client",
+  "mixins": ["shiftfix.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=26.3"
+  }
+}
